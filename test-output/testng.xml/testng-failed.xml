@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [testng.xml]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="opencart.com.utility.ListenerClass"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="opencart.com.testcases.SearchPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="loadConfig"/>
+          <include name="validSerachProductTest"/>
+          <include name="emptySerachProductTest"/>
+          <include name="getProductNameTest"/>
+          <include name="searchAfterLogin"/>
+          <include name="Setup"/>
+          <include name="getProductPriceTest"/>
+          <include name="serachProductBySearchCriteriaTest"/>
+          <include name="serachProductByCategoriesTest"/>
+          <include name="serachProductByCategoriesAndSortTest"/>
+          <include name="valiadtelistAndgridviewTest"/>
+          <include name="InvalidSerachProductTest"/>
+          <include name="searchUsingTextFrmProductDescriptionTest"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- opencart.com.testcases.SearchPageTest -->
+      <class name="opencart.com.testcases.RegisterPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="Setup"/>
+          <include name="loadConfig"/>
+          <include name="ResisterAccountTest"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- opencart.com.testcases.RegisterPageTest -->
+      <class name="opencart.com.testcases.LoginpageTest">
+        <methods>
+          <include name="loadConfig"/>
+          <include name="LoginTest"/>
+          <include name="Setup"/>
+          <include name="afterSuite"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- opencart.com.testcases.LoginpageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [testng.xml] -->
