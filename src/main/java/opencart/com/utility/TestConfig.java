@@ -1,5 +1,6 @@
 package opencart.com.utility;
 
+//git add
 public class TestConfig{
 
 	public static String server="smtp.gmail.com";
